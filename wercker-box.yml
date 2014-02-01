@@ -41,6 +41,5 @@ default-build:
                 echo "npm version $(npm -v) running"
 
 script: |
-  sudo add-apt-repository ppa:mozillateam/firefox-stable
   sudo apt-get update -y
   sudo apt-get install firefox-stable
