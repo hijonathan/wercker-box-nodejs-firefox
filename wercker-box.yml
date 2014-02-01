@@ -1,0 +1,15 @@
+name : node-firefox
+version : 0.1.0
+description: Node box with Firefox.
+inherits : wercker/nodejs@1.0.1
+keywords:
+  - nodejs
+  - firefox
+
+packages:
+  - firefox-stable
+
+script: |
+  sudo add-apt-repository ppa:mozillateam/firefox-stable
+  sudo apt-get update -y
+  sudo apt-get install firefox-stable
