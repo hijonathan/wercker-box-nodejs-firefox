@@ -8,7 +8,7 @@ keywords:
   - nodejs
   - firefox
 packages:
-  - firefox-stable
+  - firefox
 
 box-detect:
   priority : 1000
@@ -42,4 +42,4 @@ default-build:
 
 script: |
   sudo apt-get update -y
-  sudo apt-get install firefox-stable
+  sudo apt-get install firefox
